@@ -25,17 +25,17 @@ install [cosign](https://github.com/sigstore/cosign/releases) and verify
 ```bash
 cosign verify \
   --key https://synova.global/.well-known/cosign.pub \
-  ghcr.io/synova-global/nxcc:0.8.0
+  ghcr.io/synova-global/nxcc:0.8.1
 
-docker pull ghcr.io/synova-global/nxcc:0.8.0
+docker pull ghcr.io/synova-global/nxcc:0.8.1
 ```
 
 - Release tags are bare semver (`:0.8.0` for release `v0.8.0`); `:0.8` and
   `:latest` track the newest release, and every release also publishes an
   immutable `:sha-<commit>` tag for pinning.
-- **Current release: `0.8.0`.** It carries the `constituent-agreement/v3`
-  onboarding terms and the self-custody onboarding ceremony described below.
-  Onboard with this image or newer.
+- **Current release: `0.8.1`.** The 0.8 line carries the
+  `constituent-agreement/v3` onboarding terms and the self-custody onboarding
+  ceremony described below. Onboard with this image or newer.
 - You need a Linux x86_64 host with Docker (or systemd for the extracted
   binary) and outbound HTTPS to the pinned hosts listed at the bottom. Nothing
   else.
